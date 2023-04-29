@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  webserver:
+    image: nginx:latest
+    ports:
+      - "80:80"
+
+  script:
+    build: .
+    container_name: my_compose
+    volumes:
+     - ./my_script.sh:/usr/local/bin/my_script.sh
+     - ./error.log:/usr/local/bin/error.log
+    depends_on:
+      - webserver
