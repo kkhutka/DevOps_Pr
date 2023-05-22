@@ -8,7 +8,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 // Build the Docker image using the Dockerfile
-                sh 'docker build -t your-image-name'
+                sh '/usr/local/bin/docker -t your-image-name'
             }
         }
     }
