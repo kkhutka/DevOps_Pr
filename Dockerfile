@@ -6,4 +6,3 @@ COPY my_script.sh /usr/local/bin/my_script.sh
 RUN chmod +x /usr/local/bin/my_script.sh
 
 
-CMD while true; do /usr/local/bin/my_script.sh; sleep 30; done
