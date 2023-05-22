@@ -11,7 +11,7 @@ pipeline {
         
         stage('Build and Deploy') {
             steps {
-                sh 'my_script.sh'
+                sh './my_script.sh'
             }
         }
     }
