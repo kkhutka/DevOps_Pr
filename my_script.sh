@@ -12,5 +12,4 @@ curl -s --user 'api:e833fca264caf6c1adcf065921d944a3-181449aa-fb5a0dfc' \
 	-F subject='Server Response' \
 	-F text='Response code is not 2xx or 3xx'
  echo "Response code is $response. Error"
- echo "$(date): $url returned $response" >> /usr/local/bin/error.log
 fi
