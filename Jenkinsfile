@@ -12,4 +12,13 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            script {
+                sh 'docker-compose down -v'
+                sh 'docker network prune -f'
+            }
+        }
+    }
+
 }
