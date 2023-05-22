@@ -9,9 +9,10 @@ pipeline {
             }
         }
         
-        stage('Build and Deploy') {
+        stage('Build Docker Image') {
             steps {
-                sh './my_script.sh'
+                // Build the Docker image using the Dockerfile
+                sh 'docker build -t your-image-name .'
             }
         }
     }
