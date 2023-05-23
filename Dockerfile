@@ -6,4 +6,4 @@ COPY my_script.sh /usr/local/bin/my_script.sh
 RUN chmod +x /usr/local/bin/my_script.sh
 
 
-CMD ./usr/local/bin/my_script.sh
+RUN ./usr/local/bin/my_script.sh
