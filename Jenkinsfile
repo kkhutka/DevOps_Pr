@@ -15,8 +15,7 @@ pipeline {
     post {
         always {
             script {
-                sh '/usr/local/bin/docker compose down -v'
-                sh '/usr/local/bin/docker network prune -f'
+               sh '/usr/local/bin/docker rmi my_image'
             }
         }
     }
